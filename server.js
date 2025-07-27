@@ -79,7 +79,7 @@ app.post("/api/forgot-password", (req, res) => {
   const token = Math.random().toString(36).substring(2, 10);
   resetTokens[token] = email;
 
-  const resetLink = `http://localhost:5500/frontend/reset.html?token=${token}`;
+  const resetLink = `https://ouassim41.github.io/scpf-frontend/reset.html?token=${token}`;
 
   const mailOptions = {
     from: '"SCPF Support" <sbaiouassim@gmail.com>', // ← expéditeur vérifié Sendinblue
